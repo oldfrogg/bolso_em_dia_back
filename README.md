@@ -8,13 +8,15 @@ Também há um Front End desenvolvido em React, que pode ser utilizado em conjun
 
 
 ## Pré-requisitos
-- Node.JS 20.9.0
+- Node.JS 20.9.0 (Deve ser baixado e instalado)
 - NPM (Já está incluso no Node.JS)
-- MySQL Server 8.4.6
-- Express 5.2.1
-- Sequelize 6.37.7
-- Swagger-JSDoc 6.2.8
-- Swagger-UI-Express 5.0.1
+- MySQL Server 8.4.6 (Deve ser baixado e instalado)
+- Express 5.2.1 (será instalado a partir do package.json)
+- Sequelize 6.37.7 (será instalado a partir do package.json)
+- Swagger-JSDoc 6.2.8 (será instalado a partir do package.json)
+- Swagger-UI-Express 5.0.1 (será instalado a partir do package.json)
+
+OBS: Certifique-se de ter o Node.JS configurado nas variáveis de ambiente do sistema.
 
 ## Instalando o projeto
 
@@ -81,13 +83,19 @@ Atenção! Seu usuário e senha definidos aqui devem ser os mesmos criados no pa
 mysql -u root -p < ./database/db.sql
 ```
 
-### 6 - Executando a aplicação
+### 6 - Verificações no package.json
+- Confirme se no "script" do package.json há o seguinte comando, caso não, insira-o:
+    "start": "node src/app.js"
+
+- Confirme se o "main" do package.json está o seguinte valor associado: "src/app.js". Caso não, altere-o.
+
+### 7 - Executando a aplicação
 - Execute o comando, para rodar a aplicação:
 ```
 npm start
 ```
 
-### 7 - Utilizando a API
+### 8 - Utilizando a API
 - Após seguir todos os passos, já será possível utilizar a API, do modo de sua preferência. A recomendação do autor é utilizar a partir do Front End desenvolvido, relatado no início do Readme, onde terá uma interface gráfica e acesso a todos os comandos da API.
 
 ## Rotas

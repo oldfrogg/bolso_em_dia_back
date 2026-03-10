@@ -1,10 +1,13 @@
 # API BOLSO EM DIA
 
 ## Sobre
-- Este é um projeto acadêmico desenvolvido para a conclusão da Pós Graduação em Dev Foundations da FIAP em parceria com o BB, com a proposição de um desafio relacionado a temas bancários;
-- A API a seguir é uma uma API RESTful desenvolvida para cumprimento de um projeto acadêmico para finalizar o Hackaton final da Pós Graduação da turma de Dev Foundations da FIAP, feita para gerenciar o BD do projeto Bolso em Dia;
-- O projeto foi desenvolvido utilizando Node.JS, Express e Sequelize;
-- Também há um Front End desenvolvido em React, que pode ser utilizado em conjunto com este Back End, que você pode encontrar clicando [Aqui](https://github.com/oldfrogg/bolso_em_dia_front).
+Este é um projeto acadêmico desenvolvido para a conclusão da Pós Graduação em Dev Foundations da FIAP em parceria com o BB, com a proposição de um desafio relacionado a temas bancários.
+
+A API a seguir é uma uma API RESTful desenvolvida para cumprimento de um projeto acadêmico para finalizar o Hackaton final da Pós Graduação da turma de Dev Foundations da FIAP, feita para gerenciar o BD do projeto Bolso em Dia.
+
+O projeto foi desenvolvido utilizando Node.JS, Express e Sequelize.
+
+Também há um Front End desenvolvido em React, que pode ser utilizado em conjunto com este Back End, que você pode encontrar clicando [Aqui](https://github.com/oldfrogg/bolso_em_dia_front).
 
 ## Objetivos
 - Conclusão da Pós Graduação em Dev Foundations da FIAP;
@@ -24,12 +27,12 @@
 OBS: Certifique-se de ter o Node.JS configurado nas variáveis de ambiente do sistema.
 
 ## Instalando o projeto
-- É necessário ter o Node.JS instalado em sua máquina e as variáveis de ambiente relacionadas corretamente configuradas.
+É necessário ter o Node.JS instalado em sua máquina e as variáveis de ambiente relacionadas corretamente configuradas.
 
-- Lembrar de, a cada instalação que altere as variáveis de ambiente do sistema, reiniciar o terminal e/ou o editor.
+Lembrar de, a cada instalação que altere as variáveis de ambiente do sistema, reiniciar o terminal e/ou o editor.
 
 ### 1 - Instalando e configurando o MySQL Server
-- Baixe o MySQL Server no [site oficial do MySQL](https://dev.mysql.com/downloads/), de acordo com seu Sistema Operacional, na versão completa (maior arquivo). Instale-o e configure-o, inclusive nas variáveis de ambiente do sistema.
+Baixe o MySQL Server no [site oficial do MySQL](https://dev.mysql.com/downloads/), de acordo com seu Sistema Operacional, na versão completa (maior arquivo). Instale-o e configure-o, inclusive nas variáveis de ambiente do sistema.
 
 Lembrar de deixar (ou inserir) porta 3306. 
 
@@ -56,17 +59,17 @@ Para iniciar novamente, basta trocar o "stop" por "start".
 
 
 ### 2 - Clonando o repositório
-- Navegue via prompt de comando até o diretório onde deseja efetuar a instalação. 
+Navegue via prompt de comando até o diretório onde deseja efetuar a instalação. 
 
-- Caso tenha o git instalado e configurado nas variáveis de ambiente do sistema, clonar através do
+Caso tenha o git instalado e configurado nas variáveis de ambiente do sistema, clonar através do
 ```bash
 git clone https://github.com/oldfrogg/bolso_em_dia_back
 cd bolso_em_dia_back
 ```
-- Também é possível fazer o download do projeto diretamente através do Github.
+Também é possível fazer o download do projeto diretamente através do Github.
 
 ### 3 - Criando o arquivo .env na raiz do projeto
-- Abra o projeto no editor de sua preferência, e, na raiz do projeto, crie um arquivo ".env" e insira as variáveis de ambiente, conforme sua escolha:
+Abra o projeto no editor de sua preferência, e, na raiz do projeto, crie um arquivo ".env" e insira as variáveis de ambiente, conforme sua escolha:
 ```env
 DB_HOST=localhost
 DB_USER=root
@@ -80,34 +83,34 @@ Atenção! O nome do BD deve ser exatamente "BOLSO_EM_DIA" (sem aspas), pois é 
 Atenção! Seu usuário e senha definidos aqui devem ser os mesmos criados no passo 1.
 
 ### 4 - Criando o BD
-- No terminal, estando na raiz do projeto, execute o seguinte comando para criar o BD. Pode ser solicitada a senha criada anteriormente:
+No terminal, estando na raiz do projeto, execute o seguinte comando para criar o BD. Pode ser solicitada a senha criada anteriormente:
 ```bash
 mysql -u root -p < ./database/db.sql
 ```
 
 ### 5 - Instalando as dependências
-- Estando no diretório do arquivo através do terminal, instalar as dependências necessárias:
+Estando no diretório do arquivo através do terminal, instalar as dependências necessárias:
 
 ```bash
 npm install
 ```
 
 ### 6 - Verificações no package.json
-- Confirme se no "script" do package.json há o seguinte comando, caso não, insira-o:
+Confirme se no "script" do package.json há o seguinte comando, caso não, insira-o:
     "start": "node src/app.js"
 
-- Confirme se o "main" do package.json está o seguinte valor associado: "src/app.js". Caso não, altere-o.
+Confirme se o "main" do package.json está o seguinte valor associado: "src/app.js". Caso não, altere-o.
 
 ### 7 - Executando a aplicação
-- Execute o comando, para rodar a aplicação:
+Execute o comando, para rodar a aplicação:
 ```bash
 npm start
 ```
 
 ### 8 - Utilizando a API
-- Após seguir todos os passos, já será possível utilizar a API, do modo de sua preferência. A recomendação do autor é utilizar a partir do Front End desenvolvido, relatado no início do Readme, onde terá uma interface gráfica e acesso a todos os comandos da API.
+Após seguir todos os passos, já será possível utilizar a API, do modo de sua preferência. A recomendação do autor é utilizar a partir do Front End desenvolvido, relatado no início do Readme, onde terá uma interface gráfica e acesso a todos os comandos da API.
 
-- Para encerrar, basta, no prompt de comando, utilizar CTRL + 'C' e confirmar com 'S'.
+Para encerrar, basta, no prompt de comando, utilizar CTRL + 'C' e confirmar com 'S'.
 
 ## Rotas
 
